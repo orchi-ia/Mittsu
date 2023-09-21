@@ -2,7 +2,7 @@
 
 **Japanese:**
 
-*三つ* 【みっつ】
+三つ 【みっつ】
 
 *number, noun*
 * meaning: three (3).
