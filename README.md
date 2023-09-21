@@ -1,6 +1,7 @@
 # Mittsu
 
 **Japanese:**
+
 *三つ* 【みっつ】
 
 *number, noun*
