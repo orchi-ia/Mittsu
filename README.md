@@ -46,7 +46,7 @@ The `jikanpy v4` module is a Python wrapper (code to modify/extend the capabilit
 
 ## Instructions
 
-To use this app, clone the Mittsu repository onto your desktop using the GitHub Desktop application or by
+To use this app, clone the Mittsu repository onto your desktop using the GitHub Desktop application or using the git `clone` command:
 
 ```python
 git clone https://github.com/orchi-ia/Mittsu.git
