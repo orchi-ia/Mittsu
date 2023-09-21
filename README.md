@@ -65,6 +65,8 @@ or
 python3 app.py
 ```
 
+• Note: If running the app from the global terminal, ensure you have Python installed in the global environment. Otherwise, run Mittsu from the terminal of a virtual Python environment.
+
 
 ## References
 
