@@ -52,7 +52,8 @@ To use this app, clone the Mittsu repository onto your desktop using the GitHub 
 git clone https://github.com/orchi-ia/Mittsu.git
 ```
 
-and navigate into the scripts folder within your terminal and run the `app.py` file with the python command, for example:
+
+Navigate into the scripts folder within your terminal and run the `app.py` file with the python command, for example:
 
 ```python
 python app.py
