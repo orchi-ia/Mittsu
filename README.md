@@ -46,7 +46,7 @@ The `jikanpy v4` module is a Python wrapper (code to modify/extend the capabilit
 
 ## Instructions
 
-To use this app, navigate into the scripts folder within your terminal and run the `app.py` file with the python command, for example:
+To use this app, clone the Mittsu repository onto your desktop and navigate into the scripts folder within your terminal and run the `app.py` file with the python command, for example:
 
 ```python
 python app.py
