@@ -37,3 +37,19 @@ def loader(counter):
             sys.stdout.write('\rLoaded!   \n\n')
             time.sleep(0.5)
             break
+
+
+def typewriter(string):
+    """
+    Creates a typewriter effect for any string.
+
+    Arguments:
+    string - string input.
+    """
+
+    for i in string:
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        time.sleep(0.03)
+
+    sys.stdout.write('\n')

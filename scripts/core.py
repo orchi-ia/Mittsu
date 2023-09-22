@@ -4,7 +4,7 @@ import random
 import requests
 
 from jikanpy import Jikan
-from helper import loader
+from helper import loader, typewriter
 
 # initialising an instance of jikan.
 jikan = Jikan()
@@ -21,13 +21,13 @@ def setup():
     
     # string slicing to print different sections of the introduction at
     # different times.
-    print(f'\n{intro[:28]}\n')
+    typewriter(f'\n{intro[:28]}\n')
 
     time.sleep(1)
-    print(f'{intro[29:78]}\n')
+    typewriter(f'{intro[29:78]}\n')
 
     time.sleep(1)
-    print(f'{intro[79:]}\n')
+    typewriter(f'{intro[79:]}\n')
 
     loader(2)
 
@@ -39,10 +39,14 @@ def setup():
 
         time.sleep(0.5)
         if name_correct == "yes":
-            print("\nGreat! Let's get started.\n")
+            typewriter("\nGreat! Let's get started.\n")
             break
         elif name_correct == "no":
-            print("\nI'm sorry. Let's try that again.")
+            typewriter("\nI'm sorry. Let's try that again.\n")
+            time.sleep(0.5)
+        else:
+            typewriter("We didn't quite catch that... let's try again!\n")
+            time.sleep(0.5)
 
     return name
 
@@ -59,8 +63,9 @@ def get_list(style, name):
 
     loader(4)
 
-    print(f'To generate your {style} recommendations, we need a list of '
-          f'your favourite {style}. Currently, we can take up to 3 {style}.')
+    typewriter(f'To generate your {style} recommendations, we need a list of '
+               f'your favourite {style}. Currently, we can take up to 3'
+               f' {style}.')
     time.sleep(1)
 
     while True:
@@ -70,15 +75,15 @@ def get_list(style, name):
         # ensure we have 3 or fewer anime/manga.
         if (temp.count(',') + 1) > 3:
             time.sleep(0.5)
-            print(f"\nHmmm... it seems you've given us too many {style}. "
-                  f"Try that again.")
+            typewriter(f"\nHmmm... it seems you've given us too many "
+                       f"{style}. Try that again.")
         else:
             break
     
     loader(2)
 
-    print("We have received your list! Please give us a moment to compile "
-          "your recommendations.")
+    typewriter("We have received your list! Please give us a moment to "
+               "compile your recommendations.")
     
     # put the user input into a list.
     # list() and map() inbuilt functions.
