@@ -12,6 +12,8 @@ Mittsu is a console application app that uses the Jikan API[[1](#Ref1)] to recom
 
 For this project the Jikan API was used for recommendation purposes, however its capabilities extend to receiving data on characters, clubs, producers, reviews and seasons among other categories.
 
+This API does not require an API key.
+
 
 ## Features
 
