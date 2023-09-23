@@ -17,9 +17,9 @@ This API does not require an API key.
 
 ## Features
 
-• Receives up to 3 anime from a user and returns 5 recommendations (per anime input) for other anime they may love in file format.
+• Receives up to 3 anime from a user and returns 5 recommendations (per anime input) for other anime they might enjoy in file format.
 
-• Receives up to 3 manga from a user and returns 5 recommendations (per manga input) for other manga they may love in file format.
+• Receives up to 3 manga from a user and returns 5 recommendations (per manga input) for other manga they might enjoy in file format.
 
 
 ## Dependencies
