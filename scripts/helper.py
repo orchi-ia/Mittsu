@@ -13,6 +13,9 @@ def loader(counter):
     counter - integer limit for repeat.
     """
 
+    # for and while loops to reduce repetition.
+    # range() inbuilt function.
+
     count = 0
     while True:
         for i in range(4):
