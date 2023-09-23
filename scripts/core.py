@@ -110,11 +110,11 @@ def recommendations(style, user_list):
 
     for i in user_list:
         time.sleep(2)
-        # get the info of an anime/manga using the jikanpy module.
+        # get the info of an anime/manga using the jikanpy module, store in
+        # a dictionary.
         item_search = jikan.search(style, i)
 
         # dict() inbuilt function (data structure).
-        # put data from the input anime/manga into a dictionary.
         info = dict()
 
         # anime/manga title, (english title), url, genres and synopsis.
@@ -144,13 +144,13 @@ def recommendations(style, user_list):
                 
             file.write(f'\n# Your {style} recommendations: \n\n')
 
-        # get recommendations based on the input anime/manga using the API.
+        # get 5 random recommendations based on the input anime/manga using
+        # the API.
         item_id = item_search['data'][0]['mal_id']
         pull = requests.get(f'https://api.jikan.moe/v4/{style}/'
                             f'{item_id}/recommendations')
         item = pull.json()
 
-        # get 5 random recommendations for an anime/manga input.
         count = 1
         while count < 6:
 
@@ -169,7 +169,7 @@ def recommendations(style, user_list):
                                f"{title}.")
                     break
 
-            # get info on the randomly chosen anime recommendation based on
+            # get info on the randomly chosen recommendation based on
             # its title and put into a dictionary.
             rec_search = jikan.search(style, title)
 
