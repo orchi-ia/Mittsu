@@ -8,14 +8,18 @@
 * meaning: three (3).
 * also written as: 3つ.
 
-Mittsu is a console application app that uses Jikan API[[1](#Ref1)] to recommend anime/manga to users based on up to 3 anime/manga they know and love.
+Mittsu is a console application app that uses the Jikan API[[1](#Ref1)] to recommend anime/manga to users based on up to 3 anime/manga they know and love.
+
+For this project the Jikan API was used for recommendation purposes, however its capabilities extend to receiving data on characters, clubs, producers, reviews and seasons among other categories.
+
+This API does not require an API key.
 
 
 ## Features
 
-• Receives up to 3 anime from a user and returns 5 recommendations (per anime input) for other anime they may love in file format.
+• Receives up to 3 anime from a user and returns 5 recommendations (per anime input) for other anime they might enjoy in file format.
 
-• Receives up to 3 manga from a user and returns 5 recommendations (per manga input) for other manga they may love in file format.
+• Receives up to 3 manga from a user and returns 5 recommendations (per manga input) for other manga they might enjoy in file format.
 
 
 ## Dependencies
@@ -34,9 +38,9 @@ pip install <module>
 
 ### More on the modules used
 
-The `time` module provides numerous functions that allow the user to perform time-related tasks. This module was helpful to stagger the information shown to the user and to avoid rate limit errors from the API.
+The `time` module provides numerous functions that allow the programmer to perform time-related tasks. This module was helpful to stagger the information shown to the user and to avoid rate limit errors from the API.
 
-The `sys` module allowed for the interaction with the interpreter. This module was used to flush the output and to avoid moving to a new line in the `loader()` function.
+The `sys` module allowed for the interaction with the interpreter. This module was used to flush the output and to avoid moving to a new line in the `loader()` and `typewriter()` functions.
 
 The `random` module generates psuedo-random numbers which helped to limit the number of recommendations made to the user.
 
@@ -53,7 +57,7 @@ git clone https://github.com/orchi-ia/Mittsu.git
 ```
 
 
-Navigate into the scripts folder within your terminal and run the `app.py` file with the python command, for example:
+Navigate into the Mittsu `/scripts` folder within your terminal and run the `app.py` file with the python command, for example:
 
 ```python
 python app.py
