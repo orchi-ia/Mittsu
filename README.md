@@ -57,7 +57,7 @@ git clone https://github.com/orchi-ia/Mittsu.git
 ```
 
 
-Navigate into the Mittsu /scripts folder within your terminal and run the `app.py` file with the python command, for example:
+Navigate into the Mittsu `/scripts` folder within your terminal and run the `app.py` file with the python command, for example:
 
 ```python
 python app.py
