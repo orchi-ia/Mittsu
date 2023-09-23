@@ -10,7 +10,7 @@
 
 Mittsu is a console application app that uses the Jikan API[[1](#Ref1)] to recommend anime/manga to users based on up to 3 anime/manga they know and love.
 
-For this project the Jikan API was used for recommendation purposes, however its capabilities extend to receiving data on characters, clubs, producers, reviews and seasons among other categories.
+For this project the Jikan API was used for recommendation purposes, however its capabilities extend to receiving data on anime/manga characters, clubs, producers, reviews and seasons among other categories.
 
 This API does not require an API key.
 
