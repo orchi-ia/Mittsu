@@ -6,8 +6,7 @@ import sys
 def loader(counter):
     """
     Creates a 'Loading...' line that repeats a number of times defined by
-    the argument. Uses sys.stdout() to prevent moving to a new line as is
-    the case for print().
+    the argument.
 
     Arguments:
     counter - integer limit for repeat.
