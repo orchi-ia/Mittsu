@@ -12,9 +12,6 @@ def loader(counter):
     counter - integer limit for repeat.
     """
 
-    # for and while loops to reduce repetition.
-    # range() inbuilt function.
-
     count = 0
     while True:
         for i in range(4):
@@ -33,7 +30,7 @@ def loader(counter):
         # string will peek through.
         sys.stdout.write('\rLoading   ')
 
-        # set break condition for while loop.
+        # set break condition.
         count += 1
         if count == counter:
             sys.stdout.write('\rLoaded!   \n\n')

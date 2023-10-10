@@ -1,6 +1,4 @@
 
-# importing and using additional modules (instructions and explanations in
-# the README file).
 import time
 import random
 import requests
@@ -21,8 +19,6 @@ def setup():
             "recommendation system. We can base recommendations on up to 3 " \
             "of your favourite anime or manga."
     
-    # string slicing to print different sections of the introduction at
-    # different times.
     typewriter(f'\n{intro[:28]}\n')
 
     time.sleep(1)
@@ -33,7 +29,6 @@ def setup():
 
     loader(2)
 
-    # using booleans and if/else statement to branch logic for name input.
     while True:
         name = input("Let's get to know each other. What should we call you? ")
         time.sleep(0.5)
@@ -54,7 +49,6 @@ def setup():
     return name
 
 
-# functions for reusable code.
 def get_list(style, name):
     """
     Get and return a list of the user's favourite manga or anime.
@@ -73,7 +67,6 @@ def get_list(style, name):
     time.sleep(1)
 
     while True:
-        # input() inbuilt function.
         temp = input(f'So {name}, tell us your favourite {style}! Please '
                      f'separate each {style} by a comma: ')
 
@@ -90,8 +83,8 @@ def get_list(style, name):
     typewriter("We have received your list! Please give us a moment to "
                "compile your recommendations.")
     
-    # put the user input into a list (data structure).
-    # list() and map() inbuilt functions.
+    # split the input into a list at the commas, remove whitespace for each
+    # list element.
     user_list = list(map(str.strip, temp.split(",")))
 
     return user_list
@@ -110,11 +103,9 @@ def recommendations(style, user_list):
 
     for i in user_list:
         time.sleep(2)
-        # get the info of an anime/manga using the jikanpy module, store in
-        # a dictionary.
+        # get the info of an anime/manga using the jikanpy module.
         item_search = jikan.search(style, i)
 
-        # dict() inbuilt function (data structure).
         info = dict()
 
         # anime/manga title, (english title), url, genres and synopsis.
@@ -170,7 +161,7 @@ def recommendations(style, user_list):
                     break
 
             # get info on the randomly chosen recommendation based on
-            # its title and put into a dictionary.
+            # its title.
             rec_search = jikan.search(style, title)
 
             rec = dict()

@@ -14,7 +14,6 @@ def run():
     name = setup()
     time.sleep(0.5)
 
-    # use of boolean.
     running = True
 
     while running:
